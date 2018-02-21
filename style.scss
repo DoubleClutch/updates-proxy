@@ -1,0 +1,12 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #034752;
+$divider-border-color: #dddedd;
+$sub-font-color: #646869;
+$main-font-color: #282828;
+$feature-background-color: #fbfbfa;
+$section-background: #fff
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
