@@ -1,0 +1,113 @@
+$font-stack:    MaisonNeue, sans-serif
+$primary-color: #034752
+$divider-border-color: #dddedd
+$sub-font-color: #646869
+$main-font-color: #282828
+$feature-background-color: #fbfbfa
+$section-background: #fff
+@font-face
+  font-family: 'MaisonNeue'
+  src: url('../fonts/maisonneuebook.woff')
+
+
+@mixin flex-row
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+
+body
+  display: flex
+  width: 100%
+  font-family: $font-stack,
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  font-size: 14px
+
+header
+  display: flex
+  width: 100%
+  flex-direction: column
+  border-bottom: 1px solid $main-font-color
+  padding-bottom: 10px
+  background-color: white
+
+.main-nav
+  @include flex-row
+.basic-nav
+  @include flex-row
+.nav-button
+  padding: 15px
+.logo
+  height: 20px
+.search-box
+  @include flex-row
+  padding-right: 10px
+
+.campaign-title
+  background-color: $feature-background-color
+  border: 1px solid #2f2f2f
+  width: 1248px
+  height: 240px
+.video-player-container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  background-color: $feature-background-color
+  border: 1px solid #2f2f2f
+  width: 1248px
+  height: 572px
+.video
+  border: 1px solid #2f2f2f
+  width: 823px
+  height: 100%
+.pledge-info
+  border: 1px solid #2f2f2f
+  width: 425px
+  height: 100%
+.submenu
+  display: flex
+  padding-top: 10px
+  border-top: 1px solid $divider-border-color
+  border-bottom: 1px solid $divider-border-color
+  height: 71px
+  width: 100%
+  background-color: white
+
+.second-nav
+  display: flex
+  flex-direction: row
+  width: 850px
+  margin: 0 auto
+  align-items: center
+.submenu-button
+  padding: 15px 30px
+
+.project-display
+  width: 1045px
+  height: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  border: 1px solid #2f2f2f
+
+.project-info
+  border: 1px solid black
+  display: flex
+  flex-direction: column
+  width: 684px
+  height: 1000px //Change to 100% when ready
+
+.pledge
+  border: 1px solid black
+  display: flex
+  flex-direction: column
+  width: 361px
+  height: 1000px //Change to 100% when ready
+
+
+
+
