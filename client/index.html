@@ -45,18 +45,22 @@
         <div class="project-info">
             <div class="campaign"></div>
             <div class="faq"></div>
-            <div class="updates"></div>
+            <div id="updates"></div>
             <div id="comments" class="comments"></div>
             <div class="community"></div>
         </div>
-        <div class="pledge"></div>
+        <div class="pledge" style="display: none"></div>
     </section>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="http://localhost:3002/bundle.js"></script>
+    <script src="http://localhost:3003/index_bundle.js"></script>
 
     <script>
-      ReactDOM.render(React.createElement(CampaignTitle), document.getElementById('campaign-title'))
+      ReactDOM.render(
+        React.createElement(Updates, {ID: window.location.pathname.slice(1, window.location.pathname.length - 1)}),
+        document.getElementById('updates')
+      );
+      // ReactDOM.render(React.createElement(CampaignTitle), document.getElementById('campaign-title'))
     </script>
 </body>
 </html>

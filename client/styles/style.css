@@ -94,15 +94,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  border: 1px solid #2f2f2f; }
+  align-items: center; }
 
 .project-info {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  width: 684px;
-  height: 1000px; }
+  margin: 0 auto;
+  width: 75%; }
 
 .pledge {
   border: 1px solid black;
